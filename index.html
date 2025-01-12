@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shopping Website</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external stylesheet for styling -->
+    <style>
+        /* Inline basic styles for layout */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 15px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .product-card {
+            background-color: white;
+            border: 1px solid #ddd;
+            padding: 15px;
+            width: calc(33.33% - 20px);
+            box-sizing: border-box;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .product-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .product-card h3 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .product-card p {
+            color: #666;
+            font-size: 16px;
+        }
+        .price {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+        }
+        .add-to-cart {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .add-to-cart:hover {
+            background-color: #45a049;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ShopWithUs</h1>
+        <nav class="navbar">
+            <a href="#">Home</a>
+            <a href="#">Shop</a>
+            <a href="#">Cart</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="product-card">
+            <img src="https://i5.walmartimages.com/asr/7dff6408-6c44-429f-bba7-fcfd5c9c7c10_1.487c58e80945033da84907a1b8e36b10.jpeg" alt="Samsung 65-Inch 4K Smart TV">
+            <h3>Samsung 65-Inch 4K Smart TV</h3>
+            <p>Enjoy vibrant colors and clear images with this 65-inch Samsung 4K smart TV. Compatible with your favorite streaming services.</p>
+            <div class="price">$698.00</div>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://i5.walmartimages.com/asr/4f4f980b-8e1c-4a8a-9184-fce04767b063_1.7d179a7eb5c3dbb44fc4ec3487fc2028.jpeg" alt="Apple AirPods Pro">
+            <h3>Apple AirPods Pro</h3>
+            <p>Experience immersive sound and noise cancellation with the Apple AirPods Pro. Perfect for on-the-go music lovers.</p>
+            <div class="price">$249.99</div>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://i5.walmartimages.com/asr/80d7023b-04ae-4a1e-9b36-b4d0de88fc72_1.d04683f038dbb63b94f94f6d29ee3106.jpeg" alt="Nintendo Switch Console">
+            <h3>Nintendo Switch Console</h3>
+            <p>The ultimate gaming console for home and on-the-go gaming. Includes the console, dock, and Joy-Con controllers.</p>
+            <div class="price">$299.99</div>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://i5.walmartimages.com/asr/2042bc96-b87f-4536-b0c6-b2f1f5d6a310_1.e173710a4e3d5cbb98299c0fcdc0e234.jpeg" alt="Instant Pot Duo 7-in-1 Electric Pressure Cooker">
+            <h3>Instant Pot Duo 7-in-1 Electric Pressure Cooker</h3>
+            <p>This multi-functional Instant Pot combines seven kitchen appliances into one, making cooking faster and easier.</p>
+            <div class="price">$89.00</div>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://i5.walmartimages.com/asr/ed663df3-f1d0-46b8-bf67-b5e7c68ae2d1_1.c2f5f5ffbe0c91e7be3fd2a01e732eb5.jpeg" alt="Fitbit Charge 5 Fitness and Health Tracker">
+            <h3>Fitbit Charge 5 Fitness and Health Tracker</h3>
+            <p>Track your health and fitness goals with the Fitbit Charge 5, which includes heart rate monitoring, sleep tracking, and more.</p>
+            <div class="price">$129.95</div>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://i5.walmartimages.com/asr/dff5e8c0-f601-4b7c-822d-228bda82f0a0_1.52aebef6cfa6e2784de24a349fd1c343.jpeg" alt="Dyson V11 Torque Drive Cordless Vacuum Cleaner">
+            <h3>Dyson V11 Torque Drive Cordless Vacuum Cleaner</h3>
+            <p>This high-powered vacuum offers powerful suction and advanced filtration. Perfect for cleaning floors, carpets, and more.</p>
+            <div class="price">$599.99</div>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 ShopWithUs. All rights reserved.</p>
+    </footer>
+</body>
+</html>
